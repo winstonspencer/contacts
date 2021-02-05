@@ -22,17 +22,17 @@ class ContactNode
 private:
   bool m_headNode;
   bool m_tailNode;
-  char *contactName;
-  char *contactPhoneNum;
+  char *m_contactName;
+  char *m_contactPhone;
   ContactNode *m_nextNode;
-  ContactNode *m_previousNode;
 
 public:
-  void InsertAfter(ContactNode* contactNode);
+  ContactNode(char *t_contactName, char *t_contactPhone);
+  ~ContactNode();
+  void InsertAfter(ContactNode *contactNode);
   char *GetName();
   char *GetPhoneNumber();
   ContactNode *GetNext();
-  ContactNode *GetPrevious();
   void PrintContactNode();
 };
 
