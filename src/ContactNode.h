@@ -28,7 +28,7 @@ private:
   ContactNode *m_previousNode;
 
 public:
-  void InsertAfter();
+  void InsertAfter(ContactNode* contactNode);
   char *GetName();
   char *GetPhoneNumber();
   ContactNode *GetNext();
